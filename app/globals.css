@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   THE FIT — Dark Precision Brutalism / Neon Lime Pulse
+   Global canvas + scrollbar + base typography
+   ============================================================ */
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Anchor scrolling offset so fixed navbar never covers section headings */
+  scroll-padding-top: 6rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Guard against any element forcing a horizontal scrollbar */
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #c8f000;
+  color: #0a0a0a;
+}
+
+/* ---- Custom scrollbar: 4px, charcoal track, neon-lime thumb ---- */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8f000;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c8f000 #141414;
+}
+
+/* ---- Inverted dark Google Maps embed to match the OLED aesthetic ---- */
+.map-invert {
+  filter: grayscale(100%) invert(1) contrast(0.8) brightness(0.4);
+}
+
+/* ============================================================
+   Reduced motion: kill CSS marquees / bounces, fade only.
+   Framer Motion transforms are disabled via <MotionConfig
+   reducedMotion="user"> in components/MotionProvider.tsx.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
