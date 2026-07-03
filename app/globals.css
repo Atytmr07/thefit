@@ -55,6 +55,66 @@ body {
 }
 
 /* ============================================================
+   Hero "signal field" backdrop (components/HeroBackdrop.tsx).
+   Pure CSS keyframes so the SVG ships no JS; the reduced-motion
+   block below freezes every one of these automatically.
+   ============================================================ */
+
+/* Lime pulse racing along each signal line. pathLength=100 + a dash
+   period that divides 100 makes the 0->100 offset loop seamlessly. */
+.signal-pulse {
+  animation-name: signalTravel;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes signalTravel {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Emitter rings broadcasting outward from the node. */
+.ring-emit {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation-name: ringEmit;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes ringEmit {
+  0% {
+    transform: scale(0.05);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Constellation nodes breathing in and out. */
+.node-pulse {
+  animation-name: nodePulse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes nodePulse {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+/* ============================================================
    Reduced motion: kill CSS marquees / bounces, fade only.
    Framer Motion transforms are disabled via <MotionConfig
    reducedMotion="user"> in components/MotionProvider.tsx.

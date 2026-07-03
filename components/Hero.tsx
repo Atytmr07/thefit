@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, MessageCircle } from 'lucide-react';
 import { SITE } from '@/lib/site';
+import HeroBackdrop from '@/components/HeroBackdrop';
 
 // Headline split into words; the lime phrase carries `lime: true`.
 const HEADLINE_WORDS: { text: string; lime: boolean }[] = [
@@ -52,6 +53,9 @@ export default function Hero() {
             'radial-gradient(ellipse 80% 80% at 50% 42%, #000 35%, transparent 100%)',
         }}
       />
+
+      {/* Animated EMS "signal field" — pulses, emitter rings, live nodes */}
+      <HeroBackdrop />
 
       {/* Fine film grain — breaks up the gradient so the dark tones never band */}
       <div
