@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        canvas: '#0A0A0A',
-        surface: '#141414',
-        'surface-alt': '#1A1A1A',
+        canvas: '#0E0E10',
+        surface: '#18181B',
+        'surface-alt': '#202024',
         ink: '#F0F0F0',
         faint: '#666666',
         // `neon` (not `lime`) so we don't clobber Tailwind's default lime palette.

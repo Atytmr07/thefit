@@ -28,7 +28,13 @@ export default function Hero() {
   return (
     <header
       id="top"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-[#0A0A0A] px-6 pb-24 pt-32"
+      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-6 pb-24 pt-32"
+      style={{
+        // Soft graphite spotlight — lifts the centre so the hero reads as a lit
+        // room rather than a flat OLED void, then falls back to the page canvas.
+        background:
+          'radial-gradient(ellipse 92% 78% at 50% 30%, #1B1B21 0%, #131317 45%, #0E0E10 100%)',
+      }}
     >
       {/* ---- Background layers (no photo) ---- */}
 
@@ -38,35 +44,47 @@ export default function Hero() {
         className="absolute inset-0 -z-20"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px)',
+            'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
           backgroundSize: '72px 72px',
           maskImage:
-            'radial-gradient(ellipse 80% 80% at 50% 45%, #000 40%, transparent 100%)',
+            'radial-gradient(ellipse 80% 80% at 50% 42%, #000 35%, transparent 100%)',
           WebkitMaskImage:
-            'radial-gradient(ellipse 80% 80% at 50% 45%, #000 40%, transparent 100%)',
+            'radial-gradient(ellipse 80% 80% at 50% 42%, #000 35%, transparent 100%)',
+        }}
+      />
+
+      {/* Fine film grain — breaks up the gradient so the dark tones never band */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 opacity-[0.05] mix-blend-soft-light"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
         }}
       />
 
       {/* Breathing lime glow behind the headline */}
       <motion.div
         aria-hidden="true"
-        className="absolute left-1/2 top-1/2 -z-10 h-[110vmin] w-[110vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
+        className="absolute left-1/2 top-[46%] -z-10 h-[115vmin] w-[115vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
         style={{
           background:
-            'radial-gradient(circle, rgba(200,240,0,0.13) 0%, rgba(200,240,0,0.05) 35%, transparent 68%)',
+            'radial-gradient(circle, rgba(200,240,0,0.12) 0%, rgba(200,240,0,0.045) 36%, transparent 68%)',
         }}
-        animate={{ scale: [1, 1.12, 1], opacity: [0.7, 1, 0.7] }}
+        animate={{ scale: [1, 1.12, 1], opacity: [0.65, 0.95, 0.65] }}
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      {/* Top + bottom vignette so type and CTAs always read crisply */}
+      {/* Soft top sheen lifts the crown of the hero */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-[#0A0A0A] to-transparent"
+        className="absolute inset-x-0 top-0 -z-10 h-56 bg-gradient-to-b from-white/[0.035] to-transparent"
       />
+
+      {/* Bottom vignette blends seamlessly into the next section */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[#0A0A0A] to-transparent"
+        className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-t from-[#0E0E10] to-transparent"
       />
 
       {/* ---- Centered content ---- */}
@@ -130,7 +148,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 500, damping: 25 }}
-            className="inline-flex items-center justify-center gap-2 rounded-none bg-[#C8F000] px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.1em] text-[#0A0A0A] transition-[background-color,box-shadow] duration-300 hover:bg-[#D4FF00] hover:shadow-[0_0_24px_rgba(200,240,0,0.35)]"
+            className="inline-flex items-center justify-center gap-2 rounded-none bg-[#C8F000] px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.1em] text-[#0E0E10] transition-[background-color,box-shadow] duration-300 hover:bg-[#D4FF00] hover:shadow-[0_0_24px_rgba(200,240,0,0.35)]"
           >
             <MessageCircle size={18} strokeWidth={2.25} aria-hidden="true" />
             WhatsApp&apos;tan Randevu Al

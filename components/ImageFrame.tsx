@@ -28,7 +28,7 @@ export default function ImageFrame({
 }: ImageFrameProps) {
   return (
     <div
-      className={`group relative overflow-hidden border border-white/[0.06] bg-[#141414] ${className}`}
+      className={`group relative overflow-hidden border border-white/[0.06] bg-[#18181B] ${className}`}
     >
       {src ? (
         <Image

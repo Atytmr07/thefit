@@ -46,7 +46,7 @@ function StatColumn({ stat }: { stat: Stat }) {
 
 export default function Stats() {
   return (
-    <section aria-label="Rakamlarla The Fit" className="bg-[#141414] py-20">
+    <section aria-label="Rakamlarla The Fit" className="bg-[#18181B] py-20">
       <motion.div
         initial="hidden"
         whileInView="visible"

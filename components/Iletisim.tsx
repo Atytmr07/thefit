@@ -12,7 +12,7 @@ const MAP_SRC =
 
 export default function Iletisim() {
   return (
-    <section id="iletisim" className="bg-[#0A0A0A] py-24 md:py-32">
+    <section id="iletisim" className="bg-[#0E0E10] py-24 md:py-32">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-16 px-6 md:px-10 lg:grid-cols-2 lg:gap-20">
         {/* Left — contact details */}
         <motion.div
@@ -117,7 +117,7 @@ export default function Iletisim() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               transition={{ type: 'spring', stiffness: 500, damping: 25 }}
-              className="inline-flex items-center justify-center rounded-none bg-[#C8F000] px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.1em] text-[#0A0A0A] transition-[background-color,box-shadow] duration-300 hover:bg-[#D4FF00] hover:shadow-[0_0_24px_rgba(200,240,0,0.35)] max-sm:w-full"
+              className="inline-flex items-center justify-center rounded-none bg-[#C8F000] px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.1em] text-[#0E0E10] transition-[background-color,box-shadow] duration-300 hover:bg-[#D4FF00] hover:shadow-[0_0_24px_rgba(200,240,0,0.35)] max-sm:w-full"
             >
               WhatsApp&apos;tan Randevu Al
             </motion.a>

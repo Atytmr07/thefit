@@ -6,7 +6,7 @@ Founded by Sinan Kal · [@thefitstudio_](https://www.instagram.com/thefitstudio_
 Google 4.9/5 (103 reviews).
 
 **Art direction:** Dark Precision Brutalism with Neon Lime Pulse — OLED black canvas
-(`#0A0A0A`), single neon-lime accent (`#C8F000`), Barlow Condensed display type.
+(`#0E0E10`), single neon-lime accent (`#C8F000`), Barlow Condensed display type.
 
 ## Stack
 

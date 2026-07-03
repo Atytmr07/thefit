@@ -48,11 +48,11 @@ const SERVICES: Service[] = [
 ];
 
 function ServiceRow({ service }: { service: Service }) {
-  const baseBg = service.base === 'surface' ? 'bg-[#141414]' : 'bg-[#0A0A0A]';
+  const baseBg = service.base === 'surface' ? 'bg-[#18181B]' : 'bg-[#0E0E10]';
   const hoverBg =
     service.base === 'surface'
-      ? 'hover:bg-[#1A1A1A]'
-      : 'hover:bg-[#141414]';
+      ? 'hover:bg-[#202024]'
+      : 'hover:bg-[#18181B]';
 
   return (
     <motion.article
@@ -62,7 +62,7 @@ function ServiceRow({ service }: { service: Service }) {
       {/* Ghost number watermark */}
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute -top-4 right-4 select-none font-display text-[7rem] font-extrabold leading-none text-[#1A1A1A] md:right-10 md:text-[10rem]"
+        className="pointer-events-none absolute -top-4 right-4 select-none font-display text-[7rem] font-extrabold leading-none text-[#202024] md:right-10 md:text-[10rem]"
       >
         {service.number}
       </span>
@@ -95,7 +95,7 @@ function ServiceRow({ service }: { service: Service }) {
 
 export default function Hizmetler() {
   return (
-    <section id="hizmetler" className="bg-[#0A0A0A] pt-24 md:pt-32">
+    <section id="hizmetler" className="bg-[#0E0E10] pt-24 md:pt-32">
       <motion.div
         initial="hidden"
         whileInView="visible"

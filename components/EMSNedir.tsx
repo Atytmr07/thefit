@@ -29,7 +29,7 @@ function CountUpCell({ cell }: { cell: StatCell }) {
   });
 
   return (
-    <div ref={ref} className="border border-white/[0.06] bg-[#141414] p-7 md:p-8">
+    <div ref={ref} className="border border-white/[0.06] bg-[#18181B] p-7 md:p-8">
       <div className="flex items-baseline gap-1">
         <span className="font-display text-5xl font-extrabold leading-none text-[#C8F000] md:text-6xl">
           {cell.value !== null ? count : cell.staticLabel}
@@ -49,7 +49,7 @@ function CountUpCell({ cell }: { cell: StatCell }) {
 
 export default function EMSNedir() {
   return (
-    <section id="ems" className="bg-[#0A0A0A] py-24 md:py-32">
+    <section id="ems" className="bg-[#0E0E10] py-24 md:py-32">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         {/* Top — editorial text + image */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">

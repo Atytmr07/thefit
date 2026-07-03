@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #0a0a0a;
+  background-color: #0E0E10;
   color: #f0f0f0;
   font-family: var(--font-barlow), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ body {
 
 ::selection {
   background: #c8f000;
-  color: #0a0a0a;
+  color: #0E0E10;
 }
 
 /* ---- Custom scrollbar: 4px, charcoal track, neon-lime thumb ---- */
@@ -39,14 +39,14 @@ body {
   height: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #141414;
+  background: #18181B;
 }
 ::-webkit-scrollbar-thumb {
   background: #c8f000;
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: #c8f000 #141414;
+  scrollbar-color: #c8f000 #18181B;
 }
 
 /* ---- Inverted dark Google Maps embed to match the OLED aesthetic ---- */

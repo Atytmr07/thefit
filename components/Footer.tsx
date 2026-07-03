@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/[0.05] bg-[#0A0A0A]">
+    <footer className="relative overflow-hidden border-t border-white/[0.05] bg-[#0E0E10]">
       {/* Ghost display type */}
       <span
         aria-hidden="true"

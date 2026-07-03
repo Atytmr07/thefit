@@ -46,7 +46,7 @@ const ITEMS: GalleryItem[] = [
 
 export default function Galeri() {
   return (
-    <section id="galeri" className="bg-[#0A0A0A] py-24 md:py-32">
+    <section id="galeri" className="bg-[#0E0E10] py-24 md:py-32">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <motion.div
           initial="hidden"

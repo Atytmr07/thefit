@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0A0A0A',
+  themeColor: '#0E0E10',
   width: 'device-width',
   initialScale: 1,
   colorScheme: 'dark',
@@ -122,7 +122,7 @@ export default function RootLayout({
 
   return (
     <html lang="tr" className={`${barlow.variable} ${barlowCondensed.variable}`}>
-      <body className="bg-[#0A0A0A] font-body text-[#F0F0F0] antialiased">
+      <body className="bg-[#0E0E10] font-body text-[#F0F0F0] antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

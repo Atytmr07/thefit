@@ -32,7 +32,7 @@ export default function Navbar() {
         aria-label="Ana navigasyon"
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-[400ms] ${
           scrolled
-            ? 'border-b border-white/[0.05] bg-[#0A0A0A]/90 backdrop-blur-md'
+            ? 'border-b border-white/[0.05] bg-[#0E0E10]/90 backdrop-blur-md'
             : 'border-b border-transparent bg-transparent'
         }`}
       >
@@ -62,7 +62,7 @@ export default function Navbar() {
             href={SITE.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-none bg-[#C8F000] px-6 py-3 font-body text-sm font-bold uppercase tracking-[0.1em] text-[#0A0A0A] transition-all duration-300 hover:bg-[#D4FF00] hover:shadow-[0_0_24px_rgba(200,240,0,0.35)] lg:inline-flex"
+            className="hidden items-center gap-2 rounded-none bg-[#C8F000] px-6 py-3 font-body text-sm font-bold uppercase tracking-[0.1em] text-[#0E0E10] transition-all duration-300 hover:bg-[#D4FF00] hover:shadow-[0_0_24px_rgba(200,240,0,0.35)] lg:inline-flex"
           >
             <MessageCircle size={18} strokeWidth={2.25} aria-hidden="true" />
             Randevu Al
@@ -89,7 +89,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[60] flex flex-col bg-[#0A0A0A] lg:hidden"
+            className="fixed inset-0 z-[60] flex flex-col bg-[#0E0E10] lg:hidden"
           >
             <div className="flex h-20 items-center justify-between px-6">
               <LogoMark />
@@ -140,7 +140,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
-                className="flex w-full items-center justify-center gap-2 rounded-none bg-[#C8F000] px-6 py-4 font-body text-base font-bold uppercase tracking-[0.1em] text-[#0A0A0A]"
+                className="flex w-full items-center justify-center gap-2 rounded-none bg-[#C8F000] px-6 py-4 font-body text-base font-bold uppercase tracking-[0.1em] text-[#0E0E10]"
               >
                 <MessageCircle size={20} strokeWidth={2.25} aria-hidden="true" />
                 WhatsApp&apos;tan Randevu Al

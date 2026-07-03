@@ -51,7 +51,7 @@ function Stars() {
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <article className="mx-3 flex w-[320px] flex-shrink-0 flex-col rounded-none border border-white/[0.06] bg-[#141414] p-6 md:w-[380px]">
+    <article className="mx-3 flex w-[320px] flex-shrink-0 flex-col rounded-none border border-white/[0.06] bg-[#18181B] p-6 md:w-[380px]">
       <Stars />
       <p className="mt-4 flex-1 font-body text-base font-light leading-relaxed text-[#F0F0F0]/90">
         “{review.text}”
@@ -126,7 +126,7 @@ function HeaderStat({
 
 export default function Yorumlar() {
   return (
-    <section id="yorumlar" className="overflow-hidden bg-[#0A0A0A] py-24 md:py-32">
+    <section id="yorumlar" className="overflow-hidden bg-[#0E0E10] py-24 md:py-32">
       {/* Heading + stat block */}
       <motion.div
         initial="hidden"
@@ -152,11 +152,11 @@ export default function Yorumlar() {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#0A0A0A] to-transparent md:w-24"
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#0E0E10] to-transparent md:w-24"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#0A0A0A] to-transparent md:w-24"
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#0E0E10] to-transparent md:w-24"
         />
 
         <div className="flex flex-col gap-6">
