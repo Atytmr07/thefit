@@ -97,7 +97,7 @@ export default function Hero() {
         className="relative z-10 mx-auto flex max-w-5xl flex-col items-center text-center"
       >
         {/* Kinetic word-split headline */}
-        <h1 className="flex flex-wrap justify-center gap-x-[0.28em] gap-y-1 font-display text-[clamp(3.25rem,11vw,11rem)] font-extrabold uppercase leading-[0.86] tracking-[-0.02em] text-[#F0F0F0]">
+        <h1 className="flex flex-wrap justify-center gap-x-[0.28em] gap-y-1 font-display text-[clamp(2.75rem,8vw,8rem)] font-extrabold uppercase leading-[0.9] tracking-[-0.02em] text-[#F0F0F0]">
           {HEADLINE_WORDS.map((word, i) => (
             <motion.span
               key={`${word.text}-${i}`}
