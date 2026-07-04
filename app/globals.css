@@ -90,7 +90,7 @@ body {
     opacity: 0;
   }
   12% {
-    opacity: 0.55;
+    opacity: 0.75;
   }
   100% {
     transform: scale(1);
@@ -107,10 +107,30 @@ body {
 @keyframes nodePulse {
   0%,
   100% {
-    opacity: 0.15;
+    opacity: 0.25;
   }
   50% {
-    opacity: 0.75;
+    opacity: 0.95;
+  }
+}
+
+/* Slow diagonal light sweep washing across the hero. */
+.hero-sweep {
+  background: linear-gradient(
+    100deg,
+    transparent 42%,
+    rgba(200, 240, 0, 0.06) 50%,
+    transparent 58%
+  );
+  background-size: 250% 100%;
+  animation: heroSweep 9s ease-in-out infinite;
+}
+@keyframes heroSweep {
+  0% {
+    background-position: 130% 0;
+  }
+  100% {
+    background-position: -30% 0;
   }
 }
 

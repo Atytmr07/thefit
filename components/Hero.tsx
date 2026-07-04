@@ -34,7 +34,7 @@ export default function Hero() {
         // Soft graphite spotlight — lifts the centre so the hero reads as a lit
         // room rather than a flat OLED void, then falls back to the page canvas.
         background:
-          'radial-gradient(ellipse 92% 78% at 50% 30%, #1B1B21 0%, #131317 45%, #0E0E10 100%)',
+          'radial-gradient(ellipse 92% 78% at 50% 30%, #23232B 0%, #16161C 45%, #0E0E10 100%)',
       }}
     >
       {/* ---- Background layers (no photo) ---- */}
@@ -45,7 +45,7 @@ export default function Hero() {
         className="absolute inset-0 -z-20"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
+            'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
           backgroundSize: '72px 72px',
           maskImage:
             'radial-gradient(ellipse 80% 80% at 50% 42%, #000 35%, transparent 100%)',
